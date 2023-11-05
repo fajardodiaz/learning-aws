@@ -83,3 +83,14 @@
   - Control of inbound network (from other to instance)
   - Control of outbound network (from the instances to other)
 
+- Good to know about Security Groups
+  - Can be attached to multiple instances
+  - Locked down to a region/VPC combination
+  - Does live "outside" the EC2 - if traffic is blocked the EC2 instance won't see it
+  - It's good to maintain one separate security group for SSH access
+  - **It's good to maintain one separate security group for SSH access**
+  - If your application is not accessible (time out), then it's a security group issue
+  - If your application fives a "connection refuse" error, then it's an application error or it's not launched
+  - All inbound traffic is blocked by default
+  - All outbund traffic is authorised by default
+
