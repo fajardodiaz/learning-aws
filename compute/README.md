@@ -156,4 +156,14 @@
 - Or for companies that have strong regulatory or compliance needs
 
 ### EC2 Dedicated Instances
+- Instances run on hardware tath's dedicated to you
+- May share hardware with other instances in same account
+- No control over instance placement (can move hardware after Start/Stop)
+
+### EC2 Capacity Reservations
+- Reserve On-Demand instances capacity in a specific AZ for any duration
+- No time commitment (create/cancel anytime), no billing discounts
+- You always have access to EC2 capacity when you need it
+- Suitable for short-term, uninterrupted workloads that needs to be in a specific AZ
+
 
